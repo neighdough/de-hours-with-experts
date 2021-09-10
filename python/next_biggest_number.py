@@ -10,7 +10,7 @@ def next_biggest_number(num):
     stnum = str(num)
     all_combo = sorted([int(''.join(i)) for i in list(permutations(list(stnum)))])
     for v in all_combo:
-        if v > int(num):
+        if v > num:
             return v
     return -1
 
